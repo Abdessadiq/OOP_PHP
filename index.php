@@ -3,14 +3,15 @@
      *  Class & Object
      *  - Class is a BluePrint that You can create Object From..
      *  - Object is the member in the main Application..
-     * - Class Has properties..
-     * - Variable inside class = [Property ]
-     * - Variable outside class = [Variable ]
-     * -Function Inside Class = [Mehtod ]
-     * -Function Outside Class = [ Function ]
+     * - Class Has properties and methods
+     * - Variable inside class  = [ Property ]
+     * - Variable outside class = [ Variable ]
+     * -Function Inside Class   = [ Mehtod ]
+     * -Function Outside Class  = [ Function ]
      * 
      * - [ Class ] = class keyword
      * - [ new ] =  new keyword
+     * - [public, private, protected ] = visibility markers..
      * - [ -> ] = Object Operator
      * - [ $this ] = Pseudo Variable [ Refer To Object Properties]
      * -[::] = Scope Resolution Operator [ Paamayim Nekudotayim  ] = Double Colon
@@ -49,6 +50,12 @@
         public $space='16 GB';
         public $color='Silver';
         public $ownerName;
+
+        // Encapsulation
+        private $lock;
+        public function changeLock($lo){
+            $this -> lock=sha1($lo) ;
+        }
         
 
         // Constants

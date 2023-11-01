@@ -1,0 +1,4 @@
+        || Some explanations.. ||
+    - Procedural Programming [Line By Line, Block By Block..]
+    - Design Pattern [Factory, Singleton, Stratery]
+    -   Inheritance..
